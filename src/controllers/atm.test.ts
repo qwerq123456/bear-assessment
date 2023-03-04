@@ -71,7 +71,7 @@ describe('deposit test', () => {
 
 describe('widthdraw test', () => {
     test('widthdraw not enough money', () => {
-        expect(widthdraw(TestBankBook2.bankBookNum, 2000)).toBe("fail");
+        expect(widthdraw(TestBankBook2.bankBookNum, 2000)).toBe("FAIL");
         const bankBook = bankMap.get(TestBankBook2.bankBookNum);
 
         expect(bankBook?.balance).toBe(1000);
